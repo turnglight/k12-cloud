@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="k12-edu-repo" />
+        <module name="k12-base-starter" />
+        <module name="k12-base-web" />
+        <module name="k12-core-opencv" />
+        <module name="k12-base-data" />
+        <module name="k12-cloud-profile" />
+        <module name="k12-cloud" />
+        <module name="k12-base-commons" />
+        <module name="k12-base-mybatis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="k12-base-commons" target="1.8" />
+      <module name="k12-base-data" target="1.8" />
+      <module name="k12-base-mybatis" target="1.8" />
+      <module name="k12-base-starter" target="1.8" />
+      <module name="k12-base-web" target="1.8" />
+      <module name="k12-cloud" target="1.5" />
+      <module name="k12-cloud-parent" target="1.8" />
+      <module name="k12-cloud-profile" target="1.5" />
+      <module name="k12-core-opencv" target="1.8" />
+      <module name="k12-edu-repo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="k12-base-commons" options="" />
+      <module name="k12-base-data" options="" />
+      <module name="k12-base-mybatis" options="" />
+      <module name="k12-base-starter" options="" />
+      <module name="k12-base-web" options="" />
+      <module name="k12-cloud" options="" />
+      <module name="k12-cloud-parent" options="-parameters" />
+      <module name="k12-cloud-profile" options="" />
+      <module name="k12-core-opencv" options="-parameters" />
+      <module name="k12-edu-repo" options="" />
+    </option>
+  </component>
+</project>

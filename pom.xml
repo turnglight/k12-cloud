@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>k12.cloud</groupId>
+    <artifactId>k12-cloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>k12-cloud</name>
+    <description>K12 project for Spring Boot</description>
+
+    <modules>
+        <module>k12-cloud-parent</module>
+        <module>k12-base-data</module>
+        <module>k12-base-commons</module>
+        <module>k12-base-mybatis</module>
+        <module>k12-base-web</module>
+        <module>k12-base-starter</module>
+        <module>k12-edu-repo</module>
+    </modules>
+</project>

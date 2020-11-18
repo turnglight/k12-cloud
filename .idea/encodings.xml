@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-base-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-base-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-base-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-base-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-base-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-cloud-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-cloud-profile" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-core-opencv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/k12-edu-repo" charset="UTF-8" />
+  </component>
+</project>

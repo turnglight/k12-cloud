@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/k12-base-commons/k12-base-commons.iml" filepath="$PROJECT_DIR$/k12-base-commons/k12-base-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-base-data/k12-base-data.iml" filepath="$PROJECT_DIR$/k12-base-data/k12-base-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-base-mybatis/k12-base-mybatis.iml" filepath="$PROJECT_DIR$/k12-base-mybatis/k12-base-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-base-starter/k12-base-starter.iml" filepath="$PROJECT_DIR$/k12-base-starter/k12-base-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-base-web/k12-base-web.iml" filepath="$PROJECT_DIR$/k12-base-web/k12-base-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-cloud.iml" filepath="$PROJECT_DIR$/k12-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-cloud-parent/k12-cloud-parent.iml" filepath="$PROJECT_DIR$/k12-cloud-parent/k12-cloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-cloud-profile/k12-cloud-profile.iml" filepath="$PROJECT_DIR$/k12-cloud-profile/k12-cloud-profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-core-opencv/k12-core-opencv.iml" filepath="$PROJECT_DIR$/k12-core-opencv/k12-core-opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k12-edu-repo/k12-edu-repo.iml" filepath="$PROJECT_DIR$/k12-edu-repo/k12-edu-repo.iml" />
+    </modules>
+  </component>
+</project>

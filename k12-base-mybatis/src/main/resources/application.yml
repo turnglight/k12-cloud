@@ -1,0 +1,6 @@
+mybatis:
+  type-handlers-package: k12.base.mybatis.handler
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+    default-executor-type: reuse

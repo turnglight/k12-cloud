@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>k12.base.starter</groupId>
+    <artifactId>k12-base-starter</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>k12.cloud</groupId>
+        <artifactId>k12-cloud-parent</artifactId>
+        <version>Greenwich.SR3.FL</version>
+        <relativePath/>
+    </parent>
+    <properties>
+        <k12-base-mybatis.version>0.0.1</k12-base-mybatis.version>
+        <k12-base-web.version>0.0.1</k12-base-web.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>k12.base.mybatis</groupId>
+            <artifactId>k12-base-mybatis</artifactId>
+            <version>${k12-base-mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>k12.base.web</groupId>
+            <artifactId>k12-base-web</artifactId>
+            <version>${k12-base-web.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

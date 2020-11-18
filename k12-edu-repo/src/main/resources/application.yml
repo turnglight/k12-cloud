@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: k12-edu-repo
+  datasource:
+    url: jdbc:mysql://101.132.27.103:3306/k12?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: shfcqy
+    #face-live-ttT2019!@#123
+    driver-class-name: com.mysql.cj.jdbc.Driver
