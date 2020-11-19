@@ -9,18 +9,16 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Table(name = "k12_tk_subject")
+@Table(name = "t_subject")
 public class SubjectModel extends Paging {
-
     @Column(id = true)
     private Integer id;
-
     @Column
     private String name;
-
     @Column
     private String href;
-
     @Column
     private Integer level;
+    @Column
+    private String channel;
 }

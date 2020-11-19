@@ -26,6 +26,11 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
+    public List<SubjectModel> findList(SubjectModel model) {
+        return subjectRepository.findList(model);
+    }
+
+    @Override
     public SubjectModel save(SubjectModel model) {
         subjectRepository.save(model);
         return this.findById(model.getId());

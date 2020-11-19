@@ -15,8 +15,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.annotations.ApiIgnore;
+
+import java.util.List;
 
 @Api(tags = "科目")
 @RequestMapping("repo:subject")
@@ -28,14 +31,15 @@ public class SubjectController {
 
     @ApiOperation(httpMethod = "GET", value = "获取所有页", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "page", value = "分页.page", paramType = "query", dataType = "int", defaultValue = "0"),
-            @ApiImplicitParam(name = "size", value = "分页.size", paramType = "query", dataType = "int", defaultValue = "20")
+            @ApiImplicitParam(name = "level", value = "学阶(2：初中，3：高中)", paramType = "query", dataType = "int", defaultValue = "0")
     })
     @GetMapping(value = "/findPage", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    CloudApiResponse findPage(@ApiIgnore Pageable pageable){
+    CloudApiResponse findPage(@RequestParam(required = true) Integer level){
         CloudApiResponse<Page<SubjectProjection>> apiResponse = new CloudApiResponse<>();
-        Page<SubjectModel> page = subjectService.findPage(new SubjectModel(), pageable);
-        apiResponse.setData(page, SubjectProjection.class);
+        SubjectModel subjectModel = new SubjectModel();
+        subjectModel.setLevel(level);
+        List<SubjectModel> list = subjectService.findList(new SubjectModel());
+        apiResponse.setData(list, SubjectProjection.class);
         return apiResponse;
     }
 

@@ -7,7 +7,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.projection.SpelAwareProxyProjectionFactory;
 
+import java.util.List;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * Created by kinginblue on 2017/7/17.
@@ -72,9 +74,20 @@ public class CloudApiResponse<T> {
      * @param <D> 始数据类型
      * @param <TO> page 内元素投影后的类型
      */
-    @SuppressWarnings("unchecked")
     public <D, TO> void setData(Page<D> page, Class<? extends TO> projection) {
         Page<TO> convertedPage = page.map(data -> projectionFactory.createProjection(projection, data));
+        this.setData((T) convertedPage);
+    }
+
+    /**
+     * 设置数据域：应用 projection 投影后的数据
+     * @param list 原始数据 list
+     * @param projection page 内元素投影
+     * @param <D> 始数据类型
+     * @param <TO> page 内元素投影后的类型
+     */
+    public <D, TO> void setData(List<D> list, Class<? extends TO> projection) {
+        List<TO> convertedPage = list.stream().map(data -> projectionFactory.createProjection(projection, data)).collect(Collectors.toList());
         this.setData((T) convertedPage);
     }
 

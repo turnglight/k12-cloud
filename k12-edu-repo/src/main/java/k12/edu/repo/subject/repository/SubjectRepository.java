@@ -42,6 +42,11 @@ public interface SubjectRepository extends MybatisRepository<SubjectModel> {
 
     @Override
     @Lang(SimpleSelectLangDriver.class)
+    @Select("[#{model}] ORDER BY id ")
+    List<SubjectModel> findList(SubjectModel model);
+
+    @Override
+    @Lang(SimpleSelectLangDriver.class)
     @Select("SELECT COUNT(1) [#{model}]")
     long findTotal(SubjectModel model);
 
